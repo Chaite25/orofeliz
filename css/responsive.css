@@ -154,7 +154,11 @@
         width: 100%;
         height: auto;
     }
-
+.product-wraper {
+	border: 1px solid #D1D1D1;
+	overflow: hidden;
+	padding: 20px 10px;
+}
     .navigation {
         display: none;
     }
