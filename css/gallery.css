@@ -112,7 +112,15 @@
     width: 80px;
     height: 80px;
 }
-
+.csslider > .navigation label img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	padding: 5px;
+}
 .csslider > .navigation label:hover::after {
     opacity: 1;
 }
@@ -232,80 +240,6 @@
     left: auto;
     right: -27px;
     transform: rotate(225deg);
-}
-
-#slider1 > input:nth-of-type(3):checked ~ ul #bg {
-    padding: 22px;
-    transition: all 0.5s ease 0.5s;
-    width: 80%;
-}
-
-#slider1 > input:nth-of-type(3):checked ~ ul #bg div {
-    transform: translate(0px);
-    transition: all 0.5s ease 0.9s;
-}
-
-#slider1 > input:nth-of-type(6):checked ~ ul #dex-sign {
-    animation: 3.5s steps(85) 0.5s normal forwards 1 running sign-anim;
-}
-
-#bg {
-    color: #000;
-    height: 20%;
-    left: 0;
-    overflow: hidden;
-    padding: 22px 0;
-    position: absolute;
-    top: 16%;
-    width: 0;
-    z-index: 10;
-}
-
-#bg::before {
-    background: rgba(0, 0, 0, 0) url("https://raw.github.com/drygiel/csslider/master/examples/themes/fruit.jpg") repeat scroll 1px 23%;
-    content: "";
-    filter: blur(7px);
-    height: 100%;
-    left: -1px;
-    position: absolute;
-    top: 1px;
-    width: 100%;
-    z-index: -1;
-}
-
-#bg::after {
-    background: rgba(0, 0, 0, 0.35) none repeat scroll 0 0;
-    content: "";
-    height: 100%;
-    left: 0;
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 20;
-}
-
-#bg div {
-    transform: translate(120%);
-}
-
-.scrollable p {
-    font-size: 120%;
-    line-height: 140%;
-    padding: 30px;
-    text-align: justify;
-}
-
-#center {
-    margin-top: 25%;
-    text-align: center;
-}
-
-#center a {
-    font-variant: small-caps;
-    letter-spacing: 2px;
-    text-decoration: none;
-    text-transform: uppercase;
 }
 
 .rt-container {
